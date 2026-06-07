@@ -7,9 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -85,9 +82,7 @@
                         "display-lg": ["Playfair Display"],
                         "display-lg-mobile": ["Playfair Display"],
                         "mono-label": ["Hanken Grotesk"],
-                        "body-md": ["Hanken Grotesk"],
-                        "times" : ["Hanken Grotesk"]
-
+                        "body-md": ["Hanken Grotesk"]
                     },
                     "fontSize": {
                         "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
@@ -172,7 +167,7 @@ a[href*="unicorn"] {
   }else{
     window.UnicornStudio={isInitialized:!1};
     var i=document.createElement("script");
-    i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.12/dist/unicornStudio.umd.js";
+    i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.2.1/dist/unicornStudio.umd.js";
     i.onload=function(){
       if(document.readyState==="loading"){
         document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})
@@ -202,28 +197,34 @@ setInterval(() => {
 <header class="w-full top-0 sticky bg-background border-b-[1.5px] border-outline-variant z-50">
 <div class="flex justify-between items-center px-container-padding py-6 w-full max-w-full mx-auto">
 <div class="flex items-center gap-4">
-<img alt="Creatricks Logo" class="h-8 w-auto object-contain brightness-100 " src="logoproperthistime.png"/>
+<img alt="Creatricks Logo" class="h-10 w-auto object-contain" src="C:\creatricks\newlogo.png"/>
 <div class="font-headline-sm text-[18px] uppercase tracking-[0.25em] text-primary hidden lg:block text-[#BO26FF]">
                 Creatricks 2026
             </div>
 </div>
- <nav class="hidden md:flex gap-gutter items-center">
-
-<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1 transition-colors duration-300" href="landing.html">Expo</a>
-
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#competitions">Competitions</a>
-
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="schedule.html">Schedule</a>
-
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#newsletter">Archives</a>
-
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="band.html">Amplifier</a>
-
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="amenities.html">Amenities</a>
-
-
-
-</nav> 
+<nav class="hidden md:flex gap-gutter items-center">
+    <a class="font-label-caps text-label-caps text-[#f2ca50] border-b border-[#f2ca50] pb-1 transition-colors duration-300" href="landing.html">
+        Expo
+    </a>
+    
+    <a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent pb-1 hover:text-[#f2ca50] hover:border-[#f2ca50] transition-colors duration-300" href="#competitions">
+        Competitions
+    </a>
+    
+    <a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent pb-1 hover:text-[#f2ca50] hover:border-[#f2ca50] transition-colors duration-300" href="C:\creatricks\schedule.html">
+        Schedule
+    </a>
+    
+    <a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent pb-1 hover:text-[#f2ca50] hover:border-[#f2ca50] transition-colors duration-300" href="#newsletter">
+        Archives
+    </a>    
+    
+      <a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent pb-1 hover:text-[#f2ca50] hover:border-[#f2ca50] transition-colors duration-300" href="">
+        Entry Guidelines
+    </a>   
+    <a class="font-label-caps text-label-caps text-on-surface-variant border-b border-transparent pb-1 hover:text-[#f2ca50] hover:border-[#f2ca50] transition-colors duration-300" href="C:\creatricks\moreinfo.html">
+        More Info
+    </a>
 </nav>
 <button class="bg-primary text-on-primary px-8 py-3 font-label-caps text-label-caps uppercase tracking-widest transition-all hover:bg-white hover:text-black">
             Register
@@ -233,7 +234,7 @@ setInterval(() => {
 <main>
 <!-- Hero Section -->
 <section class="relative overflow-hidden px-container-padding py-section-gap flex flex-col items-center text-center">
-<div class="absolute inset-0 -z-10 opacity-30 pointer-events-none">
+<div class="absolute inset-0 -z-10 opacity-100 pointer-events-none">
 <div class="absolute inset-0 flex items-center justify-center">
     <div class="us-project-wrapper" style="width:100%;height:100%;max-width:1440px;max-height:900px;">
         <div data-us-project="5JfKpgnWQNSVX5B3kezx"></div>
@@ -244,12 +245,26 @@ setInterval(() => {
 <div class="absolute top-0 -left-20 w-[600px] h-[600px] bg-primary/5 organic-blob"></div>
 <div class="absolute bottom-0 -right-20 w-[700px] h-[700px] bg-white/5 organic-blob"></div>
 <div class="flex gap-gutter mb-12 justify-center items-center">
-<div class="w-16 h-16 thin-border border-outline-variant flex items-center justify-center p-2">
-<span class="material-symbols-outlined text-outline" data-icon="school">school</span>
-</div>
-<div class="w-[0.5px] h-12 bg-outline-variant"></div>
-<div class="w-16 h-16 thin-border border-outline-variant flex items-center justify-center p-2">
-<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+
+    <div class="w-20 h-20 thin-border border-outline-variant flex items-center justify-center p-3">
+        <img
+            src="C:\creatricks\tcislogo.png"
+            alt="Creatricks Logo"
+            class="scale-150 w-full h-full object-contain"
+        />
+    </div>
+
+    <div class="w-[0.5px] h-12 bg-outline-variant"></div>
+
+    <div class="w-20 h-20 thin-border border-outline-variant flex items-center justify-center p-3">
+        <img
+            src="C:\creatricks\newlogo.png"
+            alt="Creatricks Logo"
+            class="scale-150 w-full h-full object-contain"
+          
+        />
+    </div>
+
 </div>
 </div>
 <span class="font-label-caps text-label-caps tracking-[0.4em] uppercase mb-6 text-on-surface-variant">Presenting</span>
@@ -288,277 +303,191 @@ setInterval(() => {
 <span class="font-mono-label text-mono-label text-on-surface-variant uppercase tracking-widest">04 Category</span>
 <span class="font-headline-sm text-[22px] text-primary">MORPHIS</span>
 </div>
-<div class="flex flex-col gap-2 items-start border-l-[0.5px] border-primary pl-6">
-<span class="font-mono-label text-mono-label text-on-surface-variant uppercase tracking-widest">05 Category</span>
-<span class="font-headline-sm text-[22px] text-primary">AMPLIFIRE</span>
-</div>
 </div>
 </section>
-<!-- Competition Cards Section -->
+<!-- Competition Cards Section -->  
 <section id="competitions" class="px-container-padding py-section-gap max-w-7xl mx-auto">
 <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
 <div class="max-w-xl text-left">
 <h2 class="font-headline-md text-headline-md mb-6 text-primary">The Competitions</h2>
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Four distinct arenas designed to challenge the boundaries of structure and storytelling. Each track follows a unique aesthetic philosophy curated for the 2026 cycle.</p>
 </div>
-<div class="font-mono-label text-mono-label uppercase border-b-[0.5px] border-primary text-primary pb-1 cursor-pointer hover:text-white hover:border-white transition-all tracking-[0.2em]">
-                View Entry Guidelines
-            </div>
+<a href="C:\creatricks\entryguidlines.html"
+   class="font-mono-label text-mono-label uppercase border-b-[0.5px] border-primary text-primary pb-1 cursor-pointer hover:text-white hover:border-white transition-all tracking-[0.2em]">
+    View Entry Guidelines
+</a>
 </div>
 
 <!-- Horizontal event cards (from landingreference) -->
- <a href="comp1.html" class="block card-hover border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
+<div class="flex flex-col gap-8">
 
+<!-- EVENT 1 -->
+<a href="C:\creatricks\comp1.html" class="block card-hover border border-[#222] hover:border-[#f2ca50] transition-colors duration-300 overflow-hidden relative h-[420px] bg-[#0a0a0a]">
   <div class="absolute inset-0 z-0">
-
     <div class="us-project-wrapper">
-
       <div data-us-project="YH5OQNivB3ZHMz1lBPpQ"></div>
-
     </div>
-
     <div></div>
-
   </div>
 
-
   <div class="relative z-10 h-full flex flex-col justify-end p-10">
-
-    <div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
-
+    <div class="text-[#f2ca50] text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
       Fashion Styling
-
     </div>
-
-    <h3 class="font-times text-headline-sm text-5xl leading-none mb-5">
-
+    <h3 class="font-headline-sm text-headline-sm text-5xl leading-none mb-5">
       Luminara
-
     </h3>
-
     <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed"></p>
-
   </div>
-
 </a>
 
-
-<a href="comp4.html" class="block card-hover border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
-
+<a href="C:\creatricks\comp4.html" class="block card-hover border border-[#222] hover:border-[] transition-colors duration-300 overflow-hidden relative h-[420px] bg-[#0a0a0a]">
   <div class="absolute inset-0 z-0">
-
     <div class="us-project-wrapper">
-
       <div data-us-project="lZyPCGIVwUiv2aK2yWsr"></div>
-
     </div>
-
     <div ></div>
-
   </div>
 
-
   <div class="relative z-10 h-full flex flex-col justify-end p-10">
-
-    <div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
-
+    <div class="text-[#f2ca50] text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
       Product Design
-
     </div>
-
-    <h3 class="font-times text-headline-sm text-5xl leading-none mb-5">
-
+    <h3 class="font-headline-sm text-headline-sm text-5xl leading-none mb-5">
       Morphis
-
     </h3>
-
     <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed"></p>
-
   </div>
-
 </a>
 
-
-<a href="comp2.html" class="block card-hover border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
-
+<a href="C:\creatricks\comp2.html" class="block card-hover border border-[#222] hover:border-[#f2ca50] transition-colors duration-300 overflow-hidden relative h-[420px] bg-[#0a0a0a]">
   <div class="absolute inset-0 z-0">
-
     <div class="us-project-wrapper">
-
       <div data-us-project="LdIuPPi57Gs6ZB0EjyT5"></div>
-
     </div>
-
-    <div></div>
-
-  </div>
-
-
-  <div class="relative z-10 h-full flex flex-col justify-end p-10">
-
-    <div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
-
-      Painting
-
-    </div>
-
-    <h3 class="font-times text-headline-sm text-5xl leading-none mb-5">
-
-      Huenova
-
-    </h3>
-
-    <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed"></p>
-
-  </div>
-
-</a>
-<a href="comp2.html" class="block card-hover border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
-
-  <div class="absolute inset-0 z-0">
-
-    <div class="us-project-wrapper">
-
-      <div data-us-project="Pc6f6If7Oty3OJMbOrDY"></div>
-
-    </div>
-
-    <div></div>
-
-  </div>
-
-
-  <div class="relative z-10 h-full flex flex-col justify-end p-10">
-
-    <div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
-      Music
-    </div>
-
-    <h3 class="font-times text-headline-sm text-5xl leading-none mb-5">
-
-      Amplifire
-
-    </h3>
-
-    <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed"></p>
-
-  </div>
-
-</a>
-
-
-<a href="comp3.html" class="block card-hover border border-[#222] overflow-hidden relative h-[420px] bg-[#0a0a0a]">
-
-  <div class="absolute inset-0 z-0">
-
-    <div class="us-project-wrapper">
-
-      <div data-us-project="K0K6wgcAiHBKcSztHiRg"></div>
-
-    </div>
-
     <div ></div>
-
   </div>
-
 
   <div class="relative z-10 h-full flex flex-col justify-end p-10">
-
-    <div class="text-primary text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
-
-      Quiz
-
+    <div class="text-[#f2ca50] text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+      Painting
     </div>
-
-    <h3 class="font-times text-headline-sm text-5xl leading-none mb-5">
-
-      Envirospark
-
+    <h3 class="font-headline-sm text-headline-sm text-5xl leading-none mb-5">
+      Huenova
     </h3>
-
     <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed"></p>
+  </div>
+</a>
 
+<a href="C:\creatricks\comp3.html" class="block card-hover border border-[#222] hover:border-[] transition-colors duration-300 overflow-hidden relative h-[420px] bg-[#0a0a0a]">
+  <div class="absolute inset-0 z-0">
+    <div class="us-project-wrapper">
+      <div data-us-project="K0K6wgcAiHBKcSztHiRg"></div>
+    </div>
+    <div></div>
   </div>
 
+  <div class="relative z-10 h-full flex flex-col justify-end p-10">
+    <div class="text-[#f2ca50] text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+      Quiz
+    </div>
+    <h3 class="font-headline-sm text-headline-sm text-5xl leading-none mb-5">
+      Envirospark
+    </h3>
+    <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed"></p>
+  </div>
 </a>
+  <!-- EVENT 5 -->
+<a href="C:\creatricks\comp5.html"
+   class="block card-hover border border-[#222] hover:border-[#f2ca50] transition-colors duration-300 overflow-hidden relative h-[420px] bg-black">
 
-<!-- Event details panel (hidden, populated by JS) -->
+    <!-- Unicorn Background -->
+    <div class="absolute inset-0 z-0">
+        <div class="us-project-wrapper">
+            <div data-us-project="VODzO2QZvfiWb8RkVZX9"></div>
+        </div>
 
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/0 via-black/40 to-transparent"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full flex flex-col justify-end p-10">
+        <div class="text-[#f2ca50] text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+            Music
+        </div>
+
+        <h3 class="font-headline-sm text-headline-sm text-5xl leading-none mb-5">
+            Amplifire
+        </h3>
+
+        <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed">
+        </p>
+    </div>
+
+</a>
+</a>
+<!-- EVENT 6 -->
+<a href="C:\creatricks\comp6.html"
+   class="block card-hover border border-[#222] hover:border-[#f2ca50] transition-colors duration-300 overflow-hidden relative h-[420px] bg-black">
+
+    <!-- Unicorn Background -->
+    <div class="absolute inset-0 z-0">
+        <div class="us-project-wrapper">
+            <div data-us-project="YOUR_UNICORN_PROJECT_ID"></div>
+        </div>
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full flex flex-col justify-end p-10">
+        <div class="text-[#f2ca50] text-sm uppercase tracking-[0.35em] mb-4 font-semibold">
+            CATEGORY
+        </div>
+
+        <h3 class="font-headline-sm text-headline-sm text-5xl leading-none mb-5">
+            Pheonix Alley   
+        </h3>
+
+        <p class="font-body-md text-body-md text-on-surface-variant mb-auto leading-relaxed">
+        </p>
+    </div>
+
+</a>
 <div id="eventPage" class="hidden fade-page">
+  <section class="min-h-screen pt-40 pb-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      
+      <a href="landing.html#competitions" class="inline-block mb-16 uppercase tracking-[0.2em] text-sm text-on-surface-variant hover:text-[#B026FF] transition-colors duration-300">
+        ← Back to Competitions
+      </a>
 
+      <div class="grid md:grid-cols-2 gap-20 items-center">
+        <div>
+          <div id="eventCategory" class="uppercase tracking-[0.3em] text-[#B026FF] text-sm mb-6">
+            Architecture
+          </div>
+          <h1 id="eventTitle" class="font-headline-md text-headline-md mb-8">
+            Urban Alchemy
+          </h1>
+          <p id="eventDescription" class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-12">
+            Description
+          </p>
+        </div>
 
-<section class="min-h-screen pt-40 pb-24 px-8">
+        <div class="border border-[#222] bg-[#0a0a0a] p-12 min-h-[300px] flex items-center justify-center">
+          <div class="text-center">
+            <div class="text-[#B026FF] uppercase tracking-[0.3em] mb-6">Creatricks Showcase</div>
+            <h2 class="font-headline-sm text-2xl mb-6">Future Design Systems</h2>
+          </div>
+        </div>
+      </div>
 
-
-<div class="max-w-7xl mx-auto">
-
-
-<a href="landing.html#competitions" class="inline-block mb-16 uppercase tracking-[0.2em] text-sm text-on-surface-variant hover:text-[#f2ca50] transition">
-
-  ← Back to Competitions
-
-</a>
-
-
-<div class="grid md:grid-cols-2 gap-20 items-center">
-
-
-<div>
-
-
-<div id="eventCategory" class="uppercase tracking-[0.3em] text-primary text-sm mb-6">
-
-Architecture
-
+    </div>
+  </section>
 </div>
-
-
-<h1 id="eventTitle" class="font-headline-md text-headline-md mb-8">
-
-Urban Alchemy
-
-</h1>
-
-
-<p id="eventDescription" class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-12">
-
-Description
-
-</p>
-
-
-</div>
-
-
-<div class="border border-[#222] bg-[#0a0a0a] p-12 min-h-[300px] flex items-center justify-center">
-
-
-<div class="text-center">
-
-
-<div class="text-primary uppercase tracking-[0.3em] mb-6">Creatricks Showcase</div>
-
-
-<h2 class="font-headline-sm text-2xl mb-6">Future Design Systems</h2>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-</div>
-
-
 <!-- Event control script -->
 <script>
 const events = {
@@ -604,7 +533,7 @@ window.scrollTo({top:0,behavior:'smooth'});
 <div class="flex flex-col md:flex-row justify-between items-start px-container-padding py-section-gap gap-gutter max-w-[1440px] mx-auto">
 <div class="flex flex-col gap-10">
 <div class="flex items-center gap-3">
-<img alt="Logo" class="h-7 w-auto brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBghNTgaWr18zIMVupK-HE713YFJGanchuYVWUwH--XZx76cmMkCVc8rNmdZokQ4RwKARG3UbR13qeQhBgRJE5fZGx75uvxuCxJRkz0nwY0Db2H6KxlFRNky8UsdThZ-imJAMnl9N7S0mLDSZa433r_cj5OR6PsSvbb90LuQKwE7Buqpobcnq401Trko1AkHntHC1DyLGTfPfCd_5aRvYlokaXlwrcHWYrfUgzpE12B_uqTyNxbTlZIEP-sbec7hugNrTV2P6ntouNz"/>
+<img alt="Logo" class="h-7 w-auto object-contain" src="C:\creatricks\newlogo.png"/>
 <div class="font-headline-sm text-[18px] text-primary uppercase tracking-[0.25em]">Creatricks 2026</div>
 </div>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
@@ -619,7 +548,8 @@ window.scrollTo({top:0,behavior:'smooth'});
 <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-12">
 <div class="flex flex-col gap-5">
 <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Connect</span>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-all" href="#">expo@creatricks.edu</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-all" href="#">creatricks361@gmail.com</a>
+</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-all" href="#">+1 800-TRICKS-26</a>
 <a class="font-body-md text-body-md text-on-surface-variant hover:text-white transition-all" href="#">Gallery HQ, NY</a>
 </div>
